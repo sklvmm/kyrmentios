@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Κυρ Μεντιος</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!------Header------>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/final/logo_2.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+
+
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">MENU</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+
+    </nav>
+</section>
+
+
+<!------Welcome------>
+<section class="Welcome">
+
+<div class="text-box">
+    <h1>Κύρ Μέντιος</h1>
+    <p>Η αρχαία Μένδη ήταν πόλη της Χαλκιδικής. Η Μένδη φημιζόταν στην Αρχαιότητα για την καλή ράτσα γαΐδαρων<br> που εξέτρεφε. 
+        Έτσι, όταν οι αρχαίοι πρόγονοί μας πουλούσαν στο παζάρι κάποιο γάιδαρο έλεγαν πως<br> προερχόταν από την Μένδη, 
+        πως ήταν δηλαδή Μενδαίος (Μένδιος), για να παινέψουν τη ράτσα του και να<br> ανεβάσουν την τιμή του.
+        Από Μένδιος εύκολα έγινε στα νεότερα χρόνια Μέντιος, όπως συνηθλιζουν οι χωριάτες να<br> ονομάζουν τους γαιδάρους τους.
+        Για το ευτράπελο του θέματος, ας αναφερθεί το ποίημα <<Η μπαλάντα του κυρ-Μέντιου>> του Κώστα Βάρναλη.
+    </p>
+    <a href="" class="hero-btn">Order Now</a>
+</div>
+</section>
+
+
+<!-------- Pictures -------->
+<section class="pictures">
+    <h1>Το Σπιτι του Μεντιου</h1>
+    <p> placeholder</p>
+
+    <div class="row">
+        <div class="pic-col">
+            <img src="images/final/interior_1.png" >
+            <div class="layer">
+                <h3>PLACEHOLDER</h3>
+            </div>
+        </div>
+        <div class="pic-col">
+            <img src="images/final/interior_2.png" >
+            <div class="layer">
+                <h3>PLACEHOLDER</h3>
+            </div>
+        </div>
+        <div class="pic-col">
+            <img src="images/final/interior_3.png" >
+            <div class="layer">
+                <h3>PLACEHOLDER</h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!---------Footer--------->
+<footer>
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social_icon">
+        <li><a href="https://www.facebook.com/KurMentios"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="https://www.instagram.com/kur.mentios/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="https://www.e-food.gr/delivery/palaio-faliro/to-soyvlaki-toy-kyr-mentioy"><ion-icon name="fast-food-outline"></ion-icon></a></li>
+    </ul>
+
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <p>©Kur Mentios | All Rights Reserved</p>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<!-- --------Javascript for Toggle Menu------------ -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
