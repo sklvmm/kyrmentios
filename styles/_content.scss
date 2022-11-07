@@ -1,0 +1,135 @@
+//Welcome text origin story (home screen)
+.text-box{
+    width: 90%;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    h1{
+        font-size: 62px;
+    }
+    p{
+        margin: 10px 0 40px;
+        font-size: 14px;
+        color: rgb(0, 0, 0);
+    }
+}
+
+// Order now Button (Home Screen)
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    &:hover{
+        border: 1px solid #669999;
+        background: #669999;
+        transition: 1s;
+    }
+}
+/* --------Welcome for smaller screens-------- */
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    } 
+    .hero-btn{
+        border: 1px solid #669999;
+        background: #669999;
+    }
+}
+/* ----- Pictures ----- */
+.pictures{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 50px;
+    padding: 5%;
+    background-color: #f8f8e8;
+    h1{
+        font-size: 36px;
+        font-weight: 600;
+    
+    }
+    p{
+        color: #777;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+    }
+    .row{
+        margin-top: 5%;
+        margin-bottom: 15%;
+        display: flex;
+        justify-content: space-between;
+        .pic-col{
+            flex-basis: 32%;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            img{
+                width: 100%;
+                display: block;
+            }
+            .layer{
+                background:transparent;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: 0.5s;
+                &:hover{
+                    background: rgba(102, 153, 153, 0.7);
+                }
+                h3{
+                    text-align: center;
+                    margin: 10px 0;
+                    width: 100%;
+                    font-weight: 600;
+                    color: #fff;
+                    font-size: 26px;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    position: absolute;
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+                &:hover h3{
+                    bottom: 49%;
+                    opacity: 1;
+                }
+                
+            }
+        }
+    }
+
+
+
+}
+/* --------Pictures for smaller screens-------- */
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+/* -------- Contact page -------- */
+.c_info{
+    width: 90%;
+    color: rgb(0, 0, 0);
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
