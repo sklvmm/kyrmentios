@@ -369,3 +369,15 @@ footer .wave#wave4{
         font-size: 0.7em;
     }
 }
+
+
+/* -------- Contact page -------- */
+.welcome .text-box{
+    width: 90%;
+    color: rgb(0, 0, 0);
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
